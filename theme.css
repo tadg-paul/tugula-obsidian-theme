@@ -51,7 +51,7 @@
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
   --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border);
 
-  /* Actual Dracula colors*/
+  /* Actual tugula colors*/
   --background-primary: #282a36;
   --background-primary-alt: #44475a;
   --background-secondary: #20212B;
@@ -84,17 +84,17 @@
   --accent-l: 65%;
   --titlebar-background-focused: var(--titlebar-background);
 
-  /* Dracula Code view*/
+  /* tugula Code view*/
   --code-normal: #F8F8F2;
   --code-background: #20212B;
-  --dracula-foreground: #F8F8F2;
-  --dracula-Comment: #6272A4;
-  --dracula-keyword: #FF79C6;
-  --dracula-definition: #50FA7B;
-  --dracula-variable: #F8F8F2; /*"variable" tags are used everywhere in code, but Dracula usually only uses orange color only for declaration inputs, thus white is less annoying to look at*/
-  --dracula-number: #BD93F9;
-  --dracula-function: #8BE9FD;
-  --dracula-string: #F1FA8C;
+  --tugula-foreground: #F8F8F2;
+  --tugula-Comment: #6272A4;
+  --tugula-keyword: #FF79C6;
+  --tugula-definition: #50FA7B;
+  --tugula-variable: #F8F8F2; /*"variable" tags are used everywhere in code, but tugula usually only uses orange color only for declaration inputs, thus white is less annoying to look at*/
+  --tugula-number: #BD93F9;
+  --tugula-function: #8BE9FD;
+  --tugula-string: #F1FA8C;
 }
 
 /* LINKS & BRACKETS */
@@ -206,7 +206,7 @@ hr {
 
 pre code {
   padding: 5px !important;
-  color: var(--dracula-foreground);
+  color: var(--tugula-foreground);
   line-height: normal;
   display: block;
   background-color: var(--background-primary);
@@ -220,7 +220,7 @@ pre code {
 
 .cm-inline-code {
   background-color: var(--background-primary-alt) !important;
-  color: var(--dracula-foreground) !important;
+  color: var(--tugula-foreground) !important;
   bottom: 0px !important;
 }
 
@@ -233,70 +233,70 @@ pre code {
 }
 
 .cm-hmd-codeblock {
-  color: var(--dracula-foreground);
+  color: var(--tugula-foreground);
 }
 
 .cm-hmd-codeblock.cm-keyword {
-  color: var(--dracula-keyword);
+  color: var(--tugula-keyword);
 }
 
 .cm-def.cm-hmd-codeblock {
-  color: var(--dracula-definition);
+  color: var(--tugula-definition);
 }
 
 .cm-hmd-codeblock.cm-variable {
-  color: var(--dracula-variable);
+  color: var(--tugula-variable);
 }
 
 .cm-hmd-codeblock.cm-operator{
-  color: var(--dracula-keyword);
+  color: var(--tugula-keyword);
 }
 
 .cm-hmd-codeblock.cm-number {
-  color: var(--dracula-number);
+  color: var(--tugula-number);
 }
 
 .cm-builtin.cm-hmd-codeblock {
-  color: var(--dracula-function);
+  color: var(--tugula-function);
 }
 
 .cm-hmd-codeblock.cm-string {
-  color: var(--dracula-string);
+  color: var(--tugula-string);
 }
 
 .cm-hmd-codeblock.cm-comment {
-  color: var(--dracula-Comment);
+  color: var(--tugula-Comment);
 }
 
 /* Preview */
 
 code {
   background-color: var(--background-primary);
-  color: var(--dracula-foreground);
+  color: var(--tugula-foreground);
 }
 
 .token.function {
-  color: var(--dracula-definition);
+  color: var(--tugula-definition);
 }
 
 .token.operator {
-  color: var(--dracula-keyword);
+  color: var(--tugula-keyword);
 }
 
 .token.number {
-  color: var(--dracula-number);
+  color: var(--tugula-number);
 }
 
 .token.builtin {
-  color: var(--dracula-function);
+  color: var(--tugula-function);
 }
 
 .token.boolean {
-  color: var(--dracula-number);
+  color: var(--tugula-number);
 }
 
 .token.string {
-  color: var(--dracula-string);
+  color: var(--tugula-string);
 }
 
 /* Editor CodeBlock TEXT Appearance - */
