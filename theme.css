@@ -2,9 +2,9 @@
 .theme-light {
 
   /* Font family variables */
-  --heading-font: 'Special Elite',
+  --heading-font: 'Iosevka Quasi-Proportional',
     sans-serif;
-  --inline-title-font: 'Iosevka Quasi-Proportional', monospace;
+  --inline-title-font: 'Asap', monospace;
   --body-text-font: 'Asap', sans-serif;
   --code-block-font: 'Iosevka Custom', monospace;
   --monospace-font: 'Iosevka Custom', monospace;
@@ -14,8 +14,17 @@
 
   --heading-weight: 500;
   --heading-weight-bold: 700;
-  --inline-title-weight: 300;
-  --body-weight: 350;
+  --body-weight: 250;
+  --inline-title-weight: 120;
+
+  /* Heading font sizes */
+  --h1-size: 1.2em;
+  --h2-size: 1.2em;
+  --h3-size: 1.1em;
+  --h4-size: 1.1em;
+  --h5-size: 1.0em;
+  --h6-size: 1.0em;
+  --inline-title-size: 1.1rem;
 
 
   /* Obsidian "Dark" import so light mode looks the same*/
@@ -60,6 +69,7 @@
   --interactive-hover: var(--color-base-35);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-dimmed: color-mix(in srgb, var(--text-normal) 75%, #000000);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, .15), 0 1px 1.5px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .2), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, .3), 0 1px 1.5px 0 rgba(0, 0, 0, .2), 0 1px 2px 0 rgba(0, 0, 0, .4), 0 0 0 0 transparent;
@@ -569,12 +579,14 @@ button.mod-cta {
 
 .markdown-preview-view {
   color: var(--text-normal);
+  font-weight: var(--body-weight);
   padding-left: 8% !important;
   padding-right: 4% !important;
 }
 
 .mod-single-child .markdown-preview-view {
   color: var(--text-normal);
+  font-weight: var(--body-weight);
   padding-left: 10% !important;
   padding-right: 10% !important;
 }
@@ -583,12 +595,14 @@ button.mod-cta {
 
 .cm-s-obsidian {
   color: var(--text-normal);
+  font-weight: var(--body-weight);
   padding-left: 8% !important;
   padding-right: 4% !important;
 }
 
 .mod-single-child .cm-s-obsidian {
   color: var(--text-normal);
+  font-weight: var(--body-weight);
   padding-left: 8% !important;
   padding-right: 4% !important;
 }
@@ -975,50 +989,54 @@ button.mod-cta {
   color: var(--text-title-h1);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.6em;
+  font-size: var(--h1-size);
 }
 
 /* Inline title */
 .inline-title {
-  color: var(--interactive-accent);
-  font-family: var(--heading-font);
+  /* color: color-mix(in srgb, var(--color-accent) 75%, #FFFFFF); */
+
+  color: var(--text-dimmed);
+  font-family: var(--inline-title-font);
   font-weight: var(--inline-title-weight);
-  font-size: 1.6em;
+  font-size: var(--inline-title-size);
+  font-stretch: 150%;
+  /* font-size: var(--h1-size); */
 }
 
 .markdown-preview-view h2 {
   color: var(--text-title-h2);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.5em;
+  font-size: var(--h2-size);
 }
 
 .markdown-preview-view h3 {
   color: var(--text-title-h3);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.4em;
+  font-size: var(--h3-size);
 }
 
 .markdown-preview-view h4 {
   color: var(--text-title-h4);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.3em;
+  font-size: var(--h4-size);
 }
 
 .markdown-preview-view h5 {
   color: var(--text-title-h5);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.2em;
+  font-size: var(--h5-size);
 }
 
 .markdown-preview-view h6 {
   color: var(--text-title-h6);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.1em;
+  font-size: var(--h6-size);
 }
 
 /* editor */
@@ -1027,42 +1045,42 @@ button.mod-cta {
   color: var(--text-title-h1);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.6em;
+  font-size: var(--h1-size);
 }
 
 .cm-header-2 {
   color: var(--text-title-h2);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.5em;
+  font-size: var(--h2-size);
 }
 
 .cm-header-3 {
   color: var(--text-title-h3);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.4em;
+  font-size: var(--h3-size);
 }
 
 .cm-header-4 {
   color: var(--text-title-h4);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.3em;
+  font-size: var(--h4-size);
 }
 
 .cm-header-5 {
   color: var(--text-title-h5);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.2em;
+  font-size: var(--h5-size);
 }
 
 .cm-header-6 {
   color: var(--text-title-h6);
   font-family: var(--heading-font);
   font-weight: var(--heading-weight);
-  font-size: 1.1em;
+  font-size: var(--h6-size);
 }
 
 /* Bold text in headings */
