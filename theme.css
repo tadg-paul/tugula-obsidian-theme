@@ -236,6 +236,7 @@ hr {
 pre code {
   padding: 5px !important;
   color: var(--tugula-foreground);
+  font-family: var(--code-block-font);
   line-height: normal;
   display: block;
   background-color: var(--background-primary);
@@ -250,6 +251,7 @@ pre code {
 .cm-inline-code {
   background-color: var(--background-primary-alt) !important;
   color: var(--tugula-foreground) !important;
+  font-family: var(--monospace-font) !important;
   bottom: 0px !important;
 }
 
@@ -302,6 +304,7 @@ pre code {
 code {
   background-color: var(--background-primary);
   color: var(--tugula-foreground);
+  font-family: var(--monospace-font);
 }
 
 .token.function {
@@ -332,6 +335,7 @@ code {
 
 .cm-s-obsidian pre.HyperMD-codeblock {
   color: var(--markup-code) !important;
+  font-family: var(--code-block-font) !important;
 }
 
 /* borders */
@@ -579,6 +583,7 @@ button.mod-cta {
 
 .markdown-preview-view {
   color: var(--text-normal);
+  font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   padding-left: 8% !important;
   padding-right: 4% !important;
@@ -586,6 +591,7 @@ button.mod-cta {
 
 .mod-single-child .markdown-preview-view {
   color: var(--text-normal);
+  font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   padding-left: 10% !important;
   padding-right: 10% !important;
@@ -595,6 +601,7 @@ button.mod-cta {
 
 .cm-s-obsidian {
   color: var(--text-normal);
+  font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   padding-left: 8% !important;
   padding-right: 4% !important;
@@ -602,6 +609,7 @@ button.mod-cta {
 
 .mod-single-child .cm-s-obsidian {
   color: var(--text-normal);
+  font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   padding-left: 8% !important;
   padding-right: 4% !important;
@@ -1105,12 +1113,14 @@ button.mod-cta {
 
 a.tag {
   color: var(--text-tag);
+  font-family: var(--tag-font);
 }
 
 /* editor */
 
 .cm-hashtag {
   color: var(--text-tag) !important;
+  font-family: var(--tag-font) !important;
 }
 
 /* BOLD */
