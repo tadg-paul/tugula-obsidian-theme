@@ -1,6 +1,6 @@
 {
-   "name": "Tugula (based on Dracula with changes for readability)",
-   "description": "Based on the Dracula theme, but with changes to improve readability in dark mode. This theme is designed for use with Obsidian.",
+   "name": "Tugula",
+   "description": "A dark-mode font intended for reduced eye strain and clear readability. Originally based on Dracula but it has drifted significantly.",
    "version": "0.0.1",
    "minAppVersion": "0.16.0",
    "author": "Taḋg Paul",

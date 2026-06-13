@@ -1,5 +1,22 @@
 .theme-dark,
-.theme-light{
+.theme-light {
+
+  /* Font family variables */
+  --heading-font: 'Special Elite',
+    sans-serif;
+  --inline-title-font: 'Iosevka Quasi-Proportional', monospace;
+  --body-text-font: 'Asap', sans-serif;
+  --code-block-font: 'Iosevka Custom', monospace;
+  --monospace-font: 'Iosevka Custom', monospace;
+  --ui-font: system-ui, -apple-system, sans-serif;
+  --tag-font: 'Iosevka Quasi-Proportional Condensed', sans-serif;
+  --metadata-font: 'Iosevka Quasi-Proportional', sans-serif;
+
+  --heading-weight: 500;
+  --heading-weight-bold: 700;
+  --inline-title-weight: 300;
+  --body-weight: 350;
+
 
   /* Obsidian "Dark" import so light mode looks the same*/
   --color-scheme: dark;
@@ -44,8 +61,8 @@
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0,0,0,.15), 0 1px 1.5px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2), 0 0 0 0 transparent;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0,0,0,.3), 0 1px 1.5px 0 rgba(0,0,0,.2), 0 1px 2px 0 rgba(0,0,0,.4), 0 0 0 0 transparent;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, .15), 0 1px 1.5px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .2), 0 0 0 0 transparent;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, .3), 0 1px 1.5px 0 rgba(0, 0, 0, .2), 0 1px 2px 0 rgba(0, 0, 0, .4), 0 0 0 0 transparent;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
   --pdf-shadow: 0 0 0 1px var(--background-modifier-border);
@@ -64,10 +81,10 @@
   --text-title-h4: #ff5555;
   --text-title-h5: #f1fa8c;
   --text-title-h6: #bd93f4;
-  --canvas-color-1: 255,  85,  85;
+  --canvas-color-1: 255, 85, 85;
   --canvas-color-2: 255, 184, 108;
   --canvas-color-3: 241, 250, 140;
-  --canvas-color-4:  82, 250, 124;
+  --canvas-color-4: 82, 250, 124;
   --canvas-color-5: 139, 233, 253;
   --canvas-color-6: 189, 147, 244;
   --text-link: #8FB4FF;
@@ -91,10 +108,12 @@
   --tugula-Comment: #6272A4;
   --tugula-keyword: #FF79C6;
   --tugula-definition: #50FA7B;
-  --tugula-variable: #F8F8F2; /*"variable" tags are used everywhere in code, but tugula usually only uses orange color only for declaration inputs, thus white is less annoying to look at*/
+  --tugula-variable: #F8F8F2;
+  /*"variable" tags are used everywhere in code, but tugula usually only uses orange color only for declaration inputs, thus white is less annoying to look at*/
   --tugula-number: #BD93F9;
   --tugula-function: #8BE9FD;
   --tugula-string: #F1FA8C;
+
 }
 
 /* LINKS & BRACKETS */
@@ -161,11 +180,11 @@ hr {
   display: none;
 }
 
-.markdown-preview-view .markdown-embed-content > :first-child {
+.markdown-preview-view .markdown-embed-content> :first-child {
   margin-top: 0;
 }
 
-.markdown-preview-view .markdown-embed-content > :last-child {
+.markdown-preview-view .markdown-embed-content> :last-child {
   margin-bottom: 0;
 }
 
@@ -248,7 +267,7 @@ pre code {
   color: var(--tugula-variable);
 }
 
-.cm-hmd-codeblock.cm-operator{
+.cm-hmd-codeblock.cm-operator {
   color: var(--tugula-keyword);
 }
 
@@ -318,16 +337,13 @@ code {
   border-bottom-right-radius: 0;
 }
 
-.cm-s-obsidian span.cm-formatting-code.cm-inline-code + span.cm-inline-code {
+.cm-s-obsidian span.cm-formatting-code.cm-inline-code+span.cm-inline-code {
   border-right: none;
   border-left: none;
   border-radius: 0;
 }
 
-.cm-s-obsidian
-  span.cm-formatting-code.cm-inline-code
-  + span.cm-inline-code
-  + span.cm-formatting-code.cm-inline-code {
+.cm-s-obsidian span.cm-formatting-code.cm-inline-code+span.cm-inline-code+span.cm-formatting-code.cm-inline-code {
   border-left-width: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -425,11 +441,12 @@ thead {
 }
 
 button.mod-cta {
-    background-color: var(--interactive-accent);
-    color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
 }
 
-.horizontal-tab-nav-item.is-active, .vertical-tab-nav-item.is-active {
+.horizontal-tab-nav-item.is-active,
+.vertical-tab-nav-item.is-active {
   background-color: var(--interactive-accent);
   color: var(--text-normal);
 }
@@ -576,49 +593,431 @@ button.mod-cta {
   padding-right: 4% !important;
 }
 
-/* HEADINGS */
 
+/* fonts */
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/Asap-Variable.woff2') format('woff2-variations');
+}
+
+/* Special Elite - Typewriter font */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/SpecialElite-Regular.woff2') format('woff2');
+}
+
+/* ============================================
+   Iosevka Custom - Monospace for code
+   ============================================ */
+
+/* Iosevka Custom - Regular */
+@font-face {
+  font-family: 'Iosevka Custom';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-Regular.woff2') format('woff2');
+}
+
+/* Iosevka Custom - Italic */
+@font-face {
+  font-family: 'Iosevka Custom';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-Italic.woff2') format('woff2');
+}
+
+/* Iosevka Custom - Bold */
+@font-face {
+  font-family: 'Iosevka Custom';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-Bold.woff2') format('woff2');
+}
+
+/* Iosevka Custom - Bold Italic */
+@font-face {
+  font-family: 'Iosevka Custom';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-BoldItalic.woff2') format('woff2');
+}
+
+/* Iosevka Custom - Heavy */
+/* @font-face {
+  font-family: 'Iosevka Custom';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-Heavy.woff2') format('woff2');
+} */
+
+/* Iosevka Custom - Heavy Italic */
+/* @font-face {
+  font-family: 'Iosevka Custom';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-HeavyItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Extended - Regular */
+/* @font-face {
+  font-family: 'Iosevka Custom Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-Extended.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Extended - Italic */
+/* @font-face {
+  font-family: 'Iosevka Custom Extended';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-ExtendedItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Extended - Bold */
+/* @font-face {
+  font-family: 'Iosevka Custom Extended';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-ExtendedBold.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Extended - Bold Italic */
+/* @font-face {
+  font-family: 'Iosevka Custom Extended';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-ExtendedBoldItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Extended - Heavy */
+/* @font-face {
+  font-family: 'Iosevka Custom Extended';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-ExtendedHeavy.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Extended - Heavy Italic */
+/* @font-face {
+  font-family: 'Iosevka Custom Extended';
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-ExtendedHeavyItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Ultra Extended - Regular */
+/* @font-face {
+  font-family: 'Iosevka Custom Ultra Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: ultra-expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-UltraExtended.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Ultra Extended - Italic */
+/* @font-face {
+  font-family: 'Iosevka Custom Ultra Extended';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: ultra-expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-UltraExtendedItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Ultra Extended - Bold */
+/* @font-face {
+  font-family: 'Iosevka Custom Ultra Extended';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: ultra-expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-UltraExtendedBold.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Ultra Extended - Bold Italic */
+/* @font-face {
+  font-family: 'Iosevka Custom Ultra Extended';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: ultra-expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-UltraExtendedBoldItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Ultra Extended - Heavy */
+/* @font-face {
+  font-family: 'Iosevka Custom Ultra Extended';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: ultra-expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-UltraExtendedHeavy.woff2') format('woff2');
+} */
+
+/* Iosevka Custom Ultra Extended - Heavy Italic */
+/* @font-face {
+  font-family: 'Iosevka Custom Ultra Extended';
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: ultra-expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaCustom-UltraExtendedHeavyItalic.woff2') format('woff2');
+} */
+
+/* ============================================
+   Iosevka Quasi-Proportional - For body text
+   ============================================ */
+
+/* Iosevka Quasi-Proportional - Regular */
+@font-face {
+  font-family: 'Iosevka Quasi-Proportional';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-Regular.woff2') format('woff2');
+}
+
+/* Iosevka Quasi-Proportional - Italic */
+@font-face {
+  font-family: 'Iosevka Quasi-Proportional';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-Italic.woff2') format('woff2');
+}
+
+/* Iosevka Quasi-Proportional - Semi Bold */
+@font-face {
+  font-family: 'Iosevka Quasi-Proportional';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-SemiBold.woff2') format('woff2');
+}
+
+/* Iosevka Quasi-Proportional - Semi Bold Italic */
+@font-face {
+  font-family: 'Iosevka Quasi-Proportional';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-SemiBoldItalic.woff2') format('woff2');
+}
+
+/* Iosevka Quasi-Proportional - Heavy */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-Heavy.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional - Heavy Italic */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-HeavyItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Condensed - Regular */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: condensed;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-Condensed.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Condensed - Italic */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Condensed';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: condensed;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-CondensedItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Condensed - Semi Bold */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: condensed;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-CondensedSemiBold.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Condensed - Semi Bold Italic */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Condensed';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: condensed;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-CondensedSemiBoldItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Condensed - Heavy */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Condensed';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: condensed;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-CondensedHeavy.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Condensed - Heavy Italic */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Condensed';
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: condensed;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-CondensedHeavyItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Extended - Regular */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-Extended.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Extended - Italic */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Extended';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-ExtendedItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Extended - Semi Bold */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Extended';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-ExtendedSemiBold.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Extended - Semi Bold Italic */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Extended';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-ExtendedSemiBoldItalic.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Extended - Heavy */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Extended';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-ExtendedHeavy.woff2') format('woff2');
+} */
+
+/* Iosevka Quasi-Proportional Extended - Heavy Italic */
+/* @font-face {
+  font-family: 'Iosevka Quasi-Proportional Extended';
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url('https://tadg.ie/fonts/IosevkaQuasiProportional-ExtendedHeavyItalic.woff2') format('woff2');
+} */
+
+/* HEADINGS */
 /* preview */
 
 .markdown-preview-view h1 {
   color: var(--text-title-h1);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
+  font-size: 1.6em;
+}
+
+/* Inline title */
+.inline-title {
+  color: var(--interactive-accent);
+  font-family: var(--heading-font);
+  font-weight: var(--inline-title-weight);
   font-size: 1.6em;
 }
 
 .markdown-preview-view h2 {
   color: var(--text-title-h2);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.5em;
 }
 
 .markdown-preview-view h3 {
   color: var(--text-title-h3);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.4em;
 }
 
 .markdown-preview-view h4 {
   color: var(--text-title-h4);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.3em;
 }
 
 .markdown-preview-view h5 {
   color: var(--text-title-h5);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.2em;
 }
 
 .markdown-preview-view h6 {
   color: var(--text-title-h6);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.1em;
 }
 
@@ -626,44 +1025,60 @@ button.mod-cta {
 
 .cm-header-1 {
   color: var(--text-title-h1);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.6em;
 }
 
 .cm-header-2 {
   color: var(--text-title-h2);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.5em;
 }
 
 .cm-header-3 {
   color: var(--text-title-h3);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.4em;
 }
 
 .cm-header-4 {
   color: var(--text-title-h4);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.3em;
 }
 
 .cm-header-5 {
   color: var(--text-title-h5);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.2em;
 }
 
 .cm-header-6 {
   color: var(--text-title-h6);
-  font-family: 'Asap', sans-serif;
-  font-weight: 300;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
   font-size: 1.1em;
+}
+
+/* Bold text in headings */
+.markdown-preview-view h1 strong,
+.markdown-preview-view h1 b,
+.markdown-preview-view h2 strong,
+.markdown-preview-view h2 b,
+.markdown-preview-view h3 strong,
+.markdown-preview-view h3 b,
+.markdown-preview-view h4 strong,
+.markdown-preview-view h4 b,
+.markdown-preview-view h5 strong,
+.markdown-preview-view h5 b,
+.markdown-preview-view h6 strong,
+.markdown-preview-view h6 b {
+  font-weight: var(--heading-weight-bold);
 }
 
 /* TAGS */
@@ -880,23 +1295,25 @@ ol {
 }
 
 .suggestion-highlight {
-  color: var(--interactive-accent)!important;
+  color: var(--interactive-accent) !important;
 }
 
 .is-selected {
-  background-color: var(--blockquote-border)!important;
+  background-color: var(--blockquote-border) !important;
 }
 
-@media print { 
+@media print {
   @page {
     margin: 0mm 0mm 0mm 0mm;
   }
+
   .print .markdown-preview-view {
-      -webkit-print-color-adjust: exact;
-      background-color: #282a36;
-      color: #f8f8f2;
+    -webkit-print-color-adjust: exact;
+    background-color: #282a36;
+    color: #f8f8f2;
   }
+
   .markdown-rendered code {
-      color: #BABABA !important;
+    color: #BABABA !important;
   }
 }
