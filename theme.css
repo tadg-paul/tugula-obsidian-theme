@@ -5,7 +5,7 @@
   --heading-font: 'Iosevka Quasi-Proportional',
     sans-serif;
   --inline-title-font: 'Asap', monospace;
-  --body-text-font: 'Asap', sans-serif;
+  --body-text-font: 'Iosevka Quasi-Proportional', sans-serif;
   --code-block-font: 'Iosevka Custom', monospace;
   --monospace-font: 'Iosevka Custom', monospace;
   --ui-font: system-ui, -apple-system, sans-serif;
@@ -590,8 +590,8 @@ button.mod-cta {
   font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   line-height: var(--base-line-height) !important;
-  padding-left: 8% !important;
-  padding-right: 4% !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 .mod-single-child .markdown-preview-view {
@@ -599,8 +599,8 @@ button.mod-cta {
   font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   line-height: var(--base-line-height) !important;
-  padding-left: 10% !important;
-  padding-right: 10% !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 /* editor */
@@ -610,8 +610,8 @@ button.mod-cta {
   font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   line-height: var(--base-line-height) !important;
-  padding-left: 8% !important;
-  padding-right: 4% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .mod-single-child .cm-s-obsidian {
@@ -619,8 +619,20 @@ button.mod-cta {
   font-family: var(--body-text-font);
   font-weight: var(--body-weight);
   line-height: var(--base-line-height) !important;
-  padding-left: 8% !important;
-  padding-right: 4% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* CodeMirror 6 (current Obsidian editor) */
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-source-view.mod-cm6 .cm-content {
+  font-family: var(--body-text-font);
+  font-weight: var(--body-weight);
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+  padding-left: 0.5rem !important;
+  padding-right: 1rem !important;
 }
 
 /* Normal base text */
