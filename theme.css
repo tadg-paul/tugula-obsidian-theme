@@ -241,6 +241,7 @@ pre code {
   padding: 0.3125rem !important;
   color: var(--tugula-foreground);
   font-family: var(--code-block-font);
+  letter-spacing: 0.05em;
   line-height: normal;
   display: block;
   background-color: var(--background-primary);
@@ -256,7 +257,17 @@ pre code {
   background-color: var(--background-primary-alt) !important;
   color: var(--tugula-foreground) !important;
   font-family: var(--monospace-font) !important;
+  letter-spacing: 0.05em;
   bottom: 0 !important;
+}
+
+.cm-inline-simple {
+  background-color: var(--background-primary-alt) !important;
+  color: var(--tugula-foreground) !important;
+  font-family: var(--code-block-font) !important;
+  letter-spacing: 0.05em;
+  border: 0.0625rem solid #525660;
+  border-radius: 0.25rem;
 }
 
 /* Code Appearance */
@@ -309,6 +320,7 @@ code {
   background-color: var(--background-primary);
   color: var(--tugula-foreground);
   font-family: var(--monospace-font);
+  letter-spacing: 0.02em;
 }
 
 .token.function {
@@ -340,6 +352,7 @@ code {
 .cm-s-obsidian pre.HyperMD-codeblock {
   color: var(--markup-code) !important;
   font-family: var(--code-block-font) !important;
+  letter-spacing: 0.02em;
 }
 
 /* borders */
